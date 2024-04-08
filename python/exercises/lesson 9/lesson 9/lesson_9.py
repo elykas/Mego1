@@ -101,18 +101,16 @@
 # print(chr(rMax+97), chr(cMax+97))
    
 
+def copy(s1,s2):
+    if len(s1)%(s2)!=0:
+        return False
+    a=0
+    while(a<len(s1)//len(s2)):
+           b=0
+           while(b<len(s2)):
+                if(s1[a*(len(s2))+b]!=s2[b]):
+                    return False
+                b+=1
+           a+=1
+    return True
 
-# def CopyK(str1,str2):
-#     if len(str1) %len(str2) !=0:
-#         return False
-#     a=0
-    
-#     while(a<len(str1)):
-#         b=0
-#         while(b<len(s2)):
-#             if(str1[a*len(str2+b)]!=str2[b]):
-#                 return False
-#             b+=1
-#         a+=1
-#     return True
-    
