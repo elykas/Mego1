@@ -35,7 +35,10 @@
 #             else:
 #                 if(a[left]%2==0):
 #                     left+=1
-                    
+# print(a) 
+
+
+            
 
 
 # #find the biggest in the row
@@ -101,28 +104,27 @@
 #         m+=1
         
 
-import random
-a=[0]*100
-a[0]=2
-for i in range(1,len(a)):
-    a[i]=a[i-1]+random.randint(1,6)
-print(a)
-x=63
-low=0
-up=len(a)-1
-mid=(low+up)//2
-while(low<up):
-    if(x==a[mid]):
-        print(mid)
-        break  
-    if x > a[mid] :
-            low = mid+1
-    else:
-         up=mid-1
-    mid = (low + up) // 2
-if x != a[mid]:
-      print("-1")
-
+# import random
+# a=[0]*100
+# a[0]=2
+# for i in range(1,len(a)):
+#     a[i]=a[i-1]+random.randint(1,6)
+# print(a)
+# x=63
+# low=0
+# up=len(a)-1
+# mid=(low+up)//2
+# while(low<up):
+#     if(x==a[mid]):
+#         print(mid)
+#         break  
+#     if x > a[mid] :
+#             low = mid+1
+#     else:
+#          up=mid-1
+#     mid = (low + up) // 2
+# if x != a[mid]:
+#       print("-1")
 
 
 
