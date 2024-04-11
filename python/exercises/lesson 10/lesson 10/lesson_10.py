@@ -127,10 +127,25 @@
 #       print("-1")
 
 
+r=5
+t=r+1
+while(r>0):
+    for s in range(r,0,-1):
+        print("*",end=" ")
+    for s in range(r,t,1):
+        print(r,end=" ")
+    print()
+    r-=1
 
 
 
-
+def intToString(n):
+    s=""
+    while(n>0):
+       s=chr((n%10)+48) 
+       s=t+s
+       n=n//10
+        
 
 
 
